@@ -15,8 +15,8 @@ body{
     color: #fff;
 }
 #header{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height:100vh;
     background-image: url(images/Tunnle.jpg);
     background-size: cover;
     background-position: center;
@@ -84,9 +84,14 @@ nav ul li a:hover::after{
     flex-wrap: wrap;
 }
 .about-col-1{
-    flex-basis: 35%;
-
+    flex-basis: 100%;
+    }
+.about-col-1 img{
+    width: 1286px;
+    height: 100%;
+    margin-left: -110px;
 }
+
 .about-col-2{
     flex-basis: 100%;
 
@@ -308,10 +313,21 @@ form.btn2{
     margin-top: -18px;
     display: block;
 }
-.topicon a{
-    color: aqua;
-    background-color: aqua;
+/*--------------CSS FOR MOBILE----------*/
+@media only screen and(max-with:600px){
+    #header{
+        background-image: url(images/mobileTunnle.jpg);
+
+    }
+    .header-text {
+        margin-top: 100%;
+        font-size: 16px;
+
+
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
 }
-   
 
     
